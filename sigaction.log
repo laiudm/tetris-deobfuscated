@@ -1,0 +1,721 @@
+execve("/usr/bin/gcc", ["gcc", "-std=c99", "-pedantic-errors", "sigaction.c"], [/* 27 vars */]) = 0
+brk(0)                                  = 0xae000
+uname({sys="Linux", node="OrangePI", ...}) = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6f3f000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=92208, ...}) = 0
+mmap2(NULL, 92208, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb6f03000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabihf/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\3\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\255h\1\0004\0\0\0"..., 512) = 512
+lseek(3, 902284, SEEK_SET)              = 902284
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 2960) = 2960
+lseek(3, 896524, SEEK_SET)              = 896524
+read(3, "A4\0\0\0aeabi\0\1*\0\0\0\0057-A\0\6\n\7A\10\1\t\2\n\3\f"..., 53) = 53
+fstat64(3, {st_mode=S_IFREG|0755, st_size=905244, ...}) = 0
+mmap2(NULL, 972152, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb6e15000
+mprotect(0xb6eee000, 61440, PROT_NONE)  = 0
+mmap2(0xb6efd000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd8000) = 0xb6efd000
+mmap2(0xb6f00000, 9592, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb6f00000
+close(3)                                = 0
+mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6f3e000
+mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6f3d000
+set_tls(0xb6f3e850, 0xb6f3d008, 0xb6f42050, 0xb6f3e850, 0xb6f42050) = 0
+mprotect(0xb6efd000, 8192, PROT_READ)   = 0
+mprotect(0xa5000, 4096, PROT_READ)      = 0
+mprotect(0xb6f41000, 4096, PROT_READ)   = 0
+munmap(0xb6f03000, 92208)               = 0
+brk(0)                                  = 0xae000
+brk(0xcf000)                            = 0xcf000
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=2919792, ...}) = 0
+mmap2(NULL, 2097152, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb6c15000
+mmap2(NULL, 4096, PROT_READ, MAP_PRIVATE, 3, 0x2c5000) = 0xb6f3c000
+close(3)                                = 0
+open("/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=2570, ...}) = 0
+mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6f3b000
+read(3, "# Locale name alias data base.\n#"..., 4096) = 2570
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+munmap(0xb6f3b000, 4096)                = 0
+open("/usr/share/locale/en_US.UTF-8/LC_MESSAGES/gcc-4.9.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale/en_US.utf8/LC_MESSAGES/gcc-4.9.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale/en_US/LC_MESSAGES/gcc-4.9.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale/en.UTF-8/LC_MESSAGES/gcc-4.9.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale/en.utf8/LC_MESSAGES/gcc-4.9.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale/en/LC_MESSAGES/gcc-4.9.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale-langpack/en_US.UTF-8/LC_MESSAGES/gcc-4.9.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale-langpack/en_US.utf8/LC_MESSAGES/gcc-4.9.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale-langpack/en_US/LC_MESSAGES/gcc-4.9.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale-langpack/en.UTF-8/LC_MESSAGES/gcc-4.9.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale-langpack/en.utf8/LC_MESSAGES/gcc-4.9.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale-langpack/en/LC_MESSAGES/gcc-4.9.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+ioctl(2, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0xbeeda2a4) = -1 ENOTTY (Inappropriate ioctl for device)
+rt_sigaction(SIGINT, {SIG_IGN, [INT], SA_RESTART|0x4000000}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGINT, {0x176c9, [INT], SA_RESTART|0x4000000}, {SIG_IGN, [INT], SA_RESTART|0x4000000}, 8) = 0
+rt_sigaction(SIGHUP, {SIG_IGN, [HUP], SA_RESTART|0x4000000}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGHUP, {0x176c9, [HUP], SA_RESTART|0x4000000}, {SIG_IGN, [HUP], SA_RESTART|0x4000000}, 8) = 0
+rt_sigaction(SIGTERM, {SIG_IGN, [TERM], SA_RESTART|0x4000000}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTERM, {0x176c9, [TERM], SA_RESTART|0x4000000}, {SIG_IGN, [TERM], SA_RESTART|0x4000000}, 8) = 0
+rt_sigaction(SIGPIPE, {SIG_IGN, [PIPE], SA_RESTART|0x4000000}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGPIPE, {0x176c9, [PIPE], SA_RESTART|0x4000000}, {SIG_IGN, [PIPE], SA_RESTART|0x4000000}, 8) = 0
+rt_sigaction(SIGCHLD, {SIG_DFL, [CHLD], SA_RESTART|0x4000000}, {SIG_DFL, [], 0}, 8) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+prlimit64(0, RLIMIT_STACK, {rlim_cur=65536*1024, rlim_max=RLIM64_INFINITY}, NULL) = 0
+access("/home/orangepi/.nvm/versions/node/v7.4.0/bin/gcc", X_OK) = -1 ENOENT (No such file or directory)
+access("/usr/local/sbin/gcc", X_OK)     = -1 ENOENT (No such file or directory)
+access("/usr/local/bin/gcc", X_OK)      = -1 ENOENT (No such file or directory)
+access("/usr/sbin/gcc", X_OK)           = -1 ENOENT (No such file or directory)
+access("/usr/bin/gcc", X_OK)            = 0
+stat64("/usr/bin/gcc", {st_mode=S_IFREG|0755, st_size=553040, ...}) = 0
+lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat64("/usr/bin", {st_mode=S_IFDIR|0755, st_size=36864, ...}) = 0
+lstat64("/usr/bin/gcc", {st_mode=S_IFLNK|0777, st_size=7, ...}) = 0
+readlink("/usr/bin/gcc", "gcc-4.9", 4095) = 7
+lstat64("/usr/bin/gcc-4.9", {st_mode=S_IFREG|0755, st_size=553040, ...}) = 0
+access("/home/orangepi/.nvm/versions/node/v7.4.0/bin/gcc", X_OK) = -1 ENOENT (No such file or directory)
+access("/usr/local/sbin/gcc", X_OK)     = -1 ENOENT (No such file or directory)
+access("/usr/local/bin/gcc", X_OK)      = -1 ENOENT (No such file or directory)
+access("/usr/sbin/gcc", X_OK)           = -1 ENOENT (No such file or directory)
+access("/usr/bin/gcc", X_OK)            = 0
+stat64("/usr/bin/gcc", {st_mode=S_IFREG|0755, st_size=553040, ...}) = 0
+lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat64("/usr/bin", {st_mode=S_IFDIR|0755, st_size=36864, ...}) = 0
+lstat64("/usr/bin/gcc", {st_mode=S_IFLNK|0777, st_size=7, ...}) = 0
+readlink("/usr/bin/gcc", "gcc-4.9", 4095) = 7
+lstat64("/usr/bin/gcc-4.9", {st_mode=S_IFREG|0755, st_size=553040, ...}) = 0
+access("sigaction.c", F_OK)             = 0
+access("/usr/lib/gcc/arm-linux-gnueabihf/4.9/", X_OK) = 0
+access("/usr/lib/gcc/arm-linux-gnueabihf/4.9/", X_OK) = 0
+access("/usr/lib/gcc/arm-linux-gnueabihf/4.9/specs", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/arm-linux-gnueabihf/4.9/../../../../arm-linux-gnueabihf/lib/arm-linux-gnueabihf/4.9/specs", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/arm-linux-gnueabihf/4.9/../../../../arm-linux-gnueabihf/lib/specs", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/arm-linux-gnueabihf/specs", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/arm-linux-gnueabihf/4.9/", X_OK) = 0
+stat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/lto-wrapper", {st_mode=S_IFREG|0755, st_size=440876, ...}) = 0
+access("/usr/lib/gcc/arm-linux-gnueabihf/4.9/lto-wrapper", X_OK) = 0
+access("/tmp", R_OK|W_OK|X_OK)          = 0
+gettimeofday({1508590793, 952336}, NULL) = 0
+getpid()                                = 10703
+open("/tmp/ccgaoTDh.s", O_RDWR|O_CREAT|O_EXCL|O_LARGEFILE, 0600) = 3
+close(3)                                = 0
+stat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/cc1", {st_mode=S_IFREG|0755, st_size=10198252, ...}) = 0
+access("/usr/lib/gcc/arm-linux-gnueabihf/4.9/cc1", X_OK) = 0
+vfork(Process 10704 attached
+ <unfinished ...>
+[pid 10704] execve("/usr/lib/gcc/arm-linux-gnueabihf/4.9/cc1", ["/usr/lib/gcc/arm-linux-gnueabihf"..., "-quiet", "-imultiarch", "arm-linux-gnueabihf", "sigaction.c", "-quiet", "-dumpbase", "sigaction.c", "-march=armv7-a", "-mfloat-abi=hard", "-mfpu=vfpv3-d16", "-mthumb", "-mtls-dialect=gnu", "-auxbase", "sigaction", "-pedantic-errors", ...], [/* 30 vars */] <unfinished ...>
+[pid 10703] <... vfork resumed> )       = 10704
+[pid 10703] wait4(10704,  <unfinished ...>
+[pid 10704] <... execve resumed> )      = 0
+[pid 10704] brk(0)                      = 0xa83000
+[pid 10704] uname({sys="Linux", node="OrangePI", ...}) = 0
+[pid 10704] access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+[pid 10704] mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6f58000
+[pid 10704] access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+[pid 10704] fstat64(3, {st_mode=S_IFREG|0644, st_size=92208, ...}) = 0
+[pid 10704] mmap2(NULL, 92208, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb6f1c000
+[pid 10704] close(3)                    = 0
+[pid 10704] access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/lib/arm-linux-gnueabihf/libcloog-isl.so.4", O_RDONLY|O_CLOEXEC) = 3
+[pid 10704] read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\230p\0\0004\0\0\0"..., 512) = 512
+[pid 10704] lseek(3, 95552, SEEK_SET)   = 95552
+[pid 10704] read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1040) = 1040
+[pid 10704] lseek(3, 95236, SEEK_SET)   = 95236
+[pid 10704] read(3, "A2\0\0\0aeabi\0\1(\0\0\0\0057-A\0\6\n\7A\10\1\t\2\n\4\22"..., 51) = 51
+[pid 10704] fstat64(3, {st_mode=S_IFREG|0644, st_size=96592, ...}) = 0
+[pid 10704] mmap2(NULL, 160776, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb6ef4000
+[pid 10704] mprotect(0xb6f0b000, 61440, PROT_NONE) = 0
+[pid 10704] mmap2(0xb6f1a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0xb6f1a000
+[pid 10704] close(3)                    = 0
+[pid 10704] access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/lib/arm-linux-gnueabihf/libisl.so.13", O_RDONLY|O_CLOEXEC) = 3
+[pid 10704] read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\300\223\2\0004\0\0\0"..., 512) = 512
+[pid 10704] lseek(3, 699736, SEEK_SET)  = 699736
+[pid 10704] read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1040) = 1040
+[pid 10704] lseek(3, 699424, SEEK_SET)  = 699424
+[pid 10704] read(3, "A2\0\0\0aeabi\0\1(\0\0\0\0057-A\0\6\n\7A\10\1\t\2\n\4\22"..., 51) = 51
+[pid 10704] fstat64(3, {st_mode=S_IFREG|0644, st_size=700776, ...}) = 0
+[pid 10704] mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6f57000
+[pid 10704] mmap2(NULL, 764964, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb6e39000
+[pid 10704] mprotect(0xb6ee3000, 61440, PROT_NONE) = 0
+[pid 10704] mmap2(0xb6ef2000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa9000) = 0xb6ef2000
+[pid 10704] close(3)                    = 0
+[pid 10704] access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/lib/arm-linux-gnueabihf/libmpc.so.3", O_RDONLY|O_CLOEXEC) = 3
+[pid 10704] read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\2600\0\0004\0\0\0"..., 512) = 512
+[pid 10704] lseek(3, 58268, SEEK_SET)   = 58268
+[pid 10704] read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1000) = 1000
+[pid 10704] lseek(3, 57972, SEEK_SET)   = 57972
+[pid 10704] read(3, "A2\0\0\0aeabi\0\1(\0\0\0\0057-A\0\6\n\7A\10\1\t\2\n\4\22"..., 51) = 51
+[pid 10704] fstat64(3, {st_mode=S_IFREG|0644, st_size=59268, ...}) = 0
+[pid 10704] mmap2(NULL, 123512, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb6e1a000
+[pid 10704] mprotect(0xb6e28000, 61440, PROT_NONE) = 0
+[pid 10704] mmap2(0xb6e37000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd000) = 0xb6e37000
+[pid 10704] close(3)                    = 0
+[pid 10704] access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/lib/arm-linux-gnueabihf/libmpfr.so.4", O_RDONLY|O_CLOEXEC) = 3
+[pid 10704] read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0 j\0\0004\0\0\0"..., 512) = 512
+[pid 10704] lseek(3, 254832, SEEK_SET)  = 254832
+[pid 10704] read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1120) = 1120
+[pid 10704] lseek(3, 254508, SEEK_SET)  = 254508
+[pid 10704] read(3, "A2\0\0\0aeabi\0\1(\0\0\0\0057-A\0\6\n\7A\10\1\t\2\n\4\22"..., 51) = 51
+[pid 10704] fstat64(3, {st_mode=S_IFREG|0644, st_size=255952, ...}) = 0
+[pid 10704] mmap2(NULL, 320084, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb6dcb000
+[pid 10704] mprotect(0xb6e08000, 65536, PROT_NONE) = 0
+[pid 10704] mmap2(0xb6e18000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3d000) = 0xb6e18000
+[pid 10704] close(3)                    = 0
+[pid 10704] access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/lib/arm-linux-gnueabihf/libgmp.so.10", O_RDONLY|O_CLOEXEC) = 3
+[pid 10704] read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\240s\0\0004\0\0\0"..., 512) = 512
+[pid 10704] lseek(3, 303816, SEEK_SET)  = 303816
+[pid 10704] read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1040) = 1040
+[pid 10704] lseek(3, 303476, SEEK_SET)  = 303476
+[pid 10704] read(3, "A0\0\0\0aeabi\0\1&\0\0\0\0057-A\0\6\n\7A\10\1\t\2\n\4\22"..., 49) = 49
+[pid 10704] fstat64(3, {st_mode=S_IFREG|0644, st_size=304856, ...}) = 0
+[pid 10704] mmap2(NULL, 369056, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb6d70000
+[pid 10704] mprotect(0xb6dba000, 61440, PROT_NONE) = 0
+[pid 10704] mmap2(0xb6dc9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x49000) = 0xb6dc9000
+[pid 10704] close(3)                    = 0
+[pid 10704] access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/lib/arm-linux-gnueabihf/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+[pid 10704] read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0`\t\0\0004\0\0\0"..., 512) = 512
+[pid 10704] lseek(3, 8656, SEEK_SET)    = 8656
+[pid 10704] read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1120) = 1120
+[pid 10704] lseek(3, 8328, SEEK_SET)    = 8328
+[pid 10704] read(3, "A4\0\0\0aeabi\0\1*\0\0\0\0057-A\0\6\n\7A\10\1\t\2\n\4\22"..., 53) = 53
+[pid 10704] fstat64(3, {st_mode=S_IFREG|0644, st_size=9776, ...}) = 0
+[pid 10704] mmap2(NULL, 73912, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb6d5d000
+[pid 10704] mprotect(0xb6d5f000, 61440, PROT_NONE) = 0
+[pid 10704] mmap2(0xb6d6e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0xb6d6e000
+[pid 10704] close(3)                    = 0
+[pid 10704] access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/lib/arm-linux-gnueabihf/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+[pid 10704] read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0X\26\0\0004\0\0\0"..., 512) = 512
+[pid 10704] lseek(3, 70184, SEEK_SET)   = 70184
+[pid 10704] read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1120) = 1120
+[pid 10704] lseek(3, 69816, SEEK_SET)   = 69816
+[pid 10704] read(3, "A2\0\0\0aeabi\0\1(\0\0\0\0057-A\0\6\n\7A\10\1\t\2\n\4\22"..., 51) = 51
+[pid 10704] fstat64(3, {st_mode=S_IFREG|0644, st_size=71304, ...}) = 0
+[pid 10704] mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6f56000
+[pid 10704] mmap2(NULL, 135356, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb6d3b000
+[pid 10704] mprotect(0xb6d4c000, 61440, PROT_NONE) = 0
+[pid 10704] mmap2(0xb6d5b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x10000) = 0xb6d5b000
+[pid 10704] close(3)                    = 0
+[pid 10704] access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/lib/arm-linux-gnueabihf/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+[pid 10704] read(3, "\177ELF\1\1\1\3\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\255h\1\0004\0\0\0"..., 512) = 512
+[pid 10704] lseek(3, 902284, SEEK_SET)  = 902284
+[pid 10704] read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 2960) = 2960
+[pid 10704] lseek(3, 896524, SEEK_SET)  = 896524
+[pid 10704] read(3, "A4\0\0\0aeabi\0\1*\0\0\0\0057-A\0\6\n\7A\10\1\t\2\n\3\f"..., 53) = 53
+[pid 10704] fstat64(3, {st_mode=S_IFREG|0755, st_size=905244, ...}) = 0
+[pid 10704] mmap2(NULL, 972152, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb6c4d000
+[pid 10704] mprotect(0xb6d26000, 61440, PROT_NONE) = 0
+[pid 10704] mmap2(0xb6d35000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd8000) = 0xb6d35000
+[pid 10704] mmap2(0xb6d38000, 9592, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb6d38000
+[pid 10704] close(3)                    = 0
+[pid 10704] mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6f55000
+[pid 10704] set_tls(0xb6f554c0, 0xb6f55c28, 0xb6f5b050, 0xb6f554c0, 0xb6f5b050) = 0
+[pid 10704] mprotect(0xb6d35000, 8192, PROT_READ) = 0
+[pid 10704] mprotect(0xb6d5b000, 4096, PROT_READ) = 0
+[pid 10704] mprotect(0xb6d6e000, 4096, PROT_READ) = 0
+[pid 10704] mprotect(0xb6dc9000, 4096, PROT_READ) = 0
+[pid 10704] mprotect(0xb6e18000, 4096, PROT_READ) = 0
+[pid 10704] mprotect(0xb6e37000, 4096, PROT_READ) = 0
+[pid 10704] mprotect(0xb6ef2000, 4096, PROT_READ) = 0
+[pid 10704] mprotect(0xb6f1a000, 4096, PROT_READ) = 0
+[pid 10704] mprotect(0x9ce000, 16384, PROT_READ) = 0
+[pid 10704] mprotect(0xb6f5a000, 4096, PROT_READ) = 0
+[pid 10704] munmap(0xb6f1c000, 92208)   = 0
+[pid 10704] brk(0)                      = 0xa83000
+[pid 10704] brk(0xaa4000)               = 0xaa4000
+[pid 10704] prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=65536*1024, rlim_max=RLIM64_INFINITY}) = 0
+[pid 10704] open("/usr/lib/locale/locale-archive", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+[pid 10704] fstat64(3, {st_mode=S_IFREG|0644, st_size=2919792, ...}) = 0
+[pid 10704] mmap2(NULL, 2097152, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb6a4d000
+[pid 10704] mmap2(NULL, 4096, PROT_READ, MAP_PRIVATE, 3, 0x2c5000) = 0xb6f54000
+[pid 10704] close(3)                    = 0
+[pid 10704] open("/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3
+[pid 10704] fstat64(3, {st_mode=S_IFREG|0644, st_size=2570, ...}) = 0
+[pid 10704] mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6f53000
+[pid 10704] read(3, "# Locale name alias data base.\n#"..., 4096) = 2570
+[pid 10704] read(3, "", 4096)           = 0
+[pid 10704] close(3)                    = 0
+[pid 10704] munmap(0xb6f53000, 4096)    = 0
+[pid 10704] open("/usr/share/locale/en_US.UTF-8/LC_MESSAGES/gcc-4.9.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/share/locale/en_US.utf8/LC_MESSAGES/gcc-4.9.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/share/locale/en_US/LC_MESSAGES/gcc-4.9.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/share/locale/en.UTF-8/LC_MESSAGES/gcc-4.9.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/share/locale/en.utf8/LC_MESSAGES/gcc-4.9.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/share/locale/en/LC_MESSAGES/gcc-4.9.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/share/locale-langpack/en_US.UTF-8/LC_MESSAGES/gcc-4.9.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/share/locale-langpack/en_US.utf8/LC_MESSAGES/gcc-4.9.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/share/locale-langpack/en_US/LC_MESSAGES/gcc-4.9.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/share/locale-langpack/en.UTF-8/LC_MESSAGES/gcc-4.9.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/share/locale-langpack/en.utf8/LC_MESSAGES/gcc-4.9.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/share/locale-langpack/en/LC_MESSAGES/gcc-4.9.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+[pid 10704] ioctl(2, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0xbecbb0ec) = -1 ENOTTY (Inappropriate ioctl for device)
+[pid 10704] rt_sigaction(SIGSEGV, {0x36ca2d, [SEGV], SA_RESTART|0x4000000}, {SIG_DFL, [], 0}, 8) = 0
+[pid 10704] rt_sigaction(SIGILL, {0x36ca2d, [ILL], SA_RESTART|0x4000000}, {SIG_DFL, [], 0}, 8) = 0
+[pid 10704] rt_sigaction(SIGBUS, {0x36ca2d, [BUS], SA_RESTART|0x4000000}, {SIG_DFL, [], 0}, 8) = 0
+[pid 10704] rt_sigaction(SIGABRT, {0x36ca2d, [ABRT], SA_RESTART|0x4000000}, {SIG_DFL, [], 0}, 8) = 0
+[pid 10704] rt_sigaction(SIGFPE, {0x36ca2d, [FPE], SA_RESTART|0x4000000}, {SIG_DFL, [], 0}, 8) = 0
+[pid 10704] mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6f53000
+[pid 10704] mmap2(NULL, 2097152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb684d000
+[pid 10704] brk(0xac5000)               = 0xac5000
+[pid 10704] mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb684b000
+[pid 10704] open("/proc/meminfo", O_RDONLY|O_CLOEXEC) = 3
+[pid 10704] fstat64(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+[pid 10704] mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb684a000
+[pid 10704] read(3, "MemTotal:        1026964 kB\nMemF"..., 1024) = 1024
+[pid 10704] close(3)                    = 0
+[pid 10704] munmap(0xb684a000, 4096)    = 0
+[pid 10704] prlimit64(0, RLIMIT_AS, NULL, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+[pid 10704] open("/proc/meminfo", O_RDONLY|O_CLOEXEC) = 3
+[pid 10704] fstat64(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+[pid 10704] mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb684a000
+[pid 10704] read(3, "MemTotal:        1026964 kB\nMemF"..., 1024) = 1024
+[pid 10704] close(3)                    = 0
+[pid 10704] munmap(0xb684a000, 4096)    = 0
+[pid 10704] prlimit64(0, RLIMIT_AS, NULL, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+[pid 10704] prlimit64(0, RLIMIT_RSS, NULL, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+[pid 10704] open("/proc/meminfo", O_RDONLY|O_CLOEXEC) = 3
+[pid 10704] fstat64(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+[pid 10704] mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb684a000
+[pid 10704] read(3, "MemTotal:        1026964 kB\nMemF"..., 1024) = 1024
+[pid 10704] close(3)                    = 0
+[pid 10704] munmap(0xb684a000, 4096)    = 0
+[pid 10704] prlimit64(0, RLIMIT_AS, NULL, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+[pid 10704] open("/dev/urandom", O_RDONLY|O_LARGEFILE) = 3
+[pid 10704] read(3, "kS\333\251*\0\304\341", 8) = 8
+[pid 10704] close(3)                    = 0
+[pid 10704] gettimeofday({1508590794, 50441}, NULL) = 0
+[pid 10704] access("/usr/lib/gcc/arm-linux-gnueabihf/4.9/", X_OK) = 0
+[pid 10704] stat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] stat64("/usr/local/include/arm-linux-gnueabihf", 0xbecbb068) = -1 ENOENT (No such file or directory)
+[pid 10704] stat64("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] stat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] stat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/../../../../arm-linux-gnueabihf/include", 0xbecbb068) = -1 ENOENT (No such file or directory)
+[pid 10704] stat64("/usr/include/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] stat64("/usr/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] stat64("sigaction.c.gch", 0xbecbb0a8) = -1 ENOENT (No such file or directory)
+[pid 10704] open("sigaction.c", O_RDONLY|O_NOCTTY|O_LARGEFILE) = 3
+[pid 10704] fstat64(3, {st_mode=S_IFREG|0644, st_size=425, ...}) = 0
+[pid 10704] read(3, "#include <signal.h>\n\n\nstatic voi"..., 425) = 425
+[pid 10704] close(3)                    = 0
+[pid 10704] mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6849000
+[pid 10704] brk(0xae6000)               = 0xae6000
+[pid 10704] open("/tmp/ccgaoTDh.s", O_WRONLY|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 3
+[pid 10704] fstat64(3, {st_mode=S_IFREG|0600, st_size=0, ...}) = 0
+[pid 10704] mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6848000
+[pid 10704] mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6846000
+[pid 10704] mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6844000
+[pid 10704] mmap2(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6840000
+[pid 10704] mmap2(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb683c000
+[pid 10704] stat64("/home/orangepi/tetris", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+[pid 10704] stat64(".", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include/stdc-predef.h", 0xbecb9f88) = -1 ENOENT (No such file or directory)
+[pid 10704] stat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include/stdc-predef.h.gch", 0xbecbb048) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include/stdc-predef.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local/include/stdc-predef.h", 0xbecb9f88) = -1 ENOENT (No such file or directory)
+[pid 10704] stat64("/usr/local/include/stdc-predef.h.gch", 0xbecbb048) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/local/include/stdc-predef.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed/stdc-predef.h", 0xbecb9f88) = -1 ENOENT (No such file or directory)
+[pid 10704] stat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed/stdc-predef.h.gch", 0xbecbb048) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed/stdc-predef.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/include/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include/arm-linux-gnueabihf/stdc-predef.h", 0xbecb9f88) = -1 ENOENT (No such file or directory)
+[pid 10704] stat64("/usr/include/arm-linux-gnueabihf/stdc-predef.h.gch", 0xbecbb048) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/include/arm-linux-gnueabihf/stdc-predef.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/include/stdc-predef.h", {st_mode=S_IFREG|0644, st_size=2153, ...}) = 0
+[pid 10704] stat64("/usr/include/stdc-predef.h.gch", 0xbecbb048) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/include/stdc-predef.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = 4
+[pid 10704] fstat64(4, {st_mode=S_IFREG|0644, st_size=2153, ...}) = 0
+[pid 10704] read(4, "/* Copyright (C) 1991-2015 Free "..., 2153) = 2153
+[pid 10704] close(4)                    = 0
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include/signal.h", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] stat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include/signal.h.gch", 0xbecbaf20) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include/signal.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local/include/signal.h", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] stat64("/usr/local/include/signal.h.gch", 0xbecbaf20) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/local/include/signal.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed/signal.h", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] stat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed/signal.h.gch", 0xbecbaf20) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed/signal.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/include/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include/arm-linux-gnueabihf/signal.h", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] stat64("/usr/include/arm-linux-gnueabihf/signal.h.gch", 0xbecbaf20) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/include/arm-linux-gnueabihf/signal.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/include/signal.h", {st_mode=S_IFREG|0644, st_size=12223, ...}) = 0
+[pid 10704] stat64("/usr/include/signal.h.gch", 0xbecbaf20) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/include/signal.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = 4
+[pid 10704] fstat64(4, {st_mode=S_IFREG|0644, st_size=12223, ...}) = 0
+[pid 10704] read(4, "/* Copyright (C) 1991-2015 Free "..., 12223) = 12223
+[pid 10704] close(4)                    = 0
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include/features.h", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] stat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include/features.h.gch", 0xbecbaf20) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include/features.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local/include/features.h", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] stat64("/usr/local/include/features.h.gch", 0xbecbaf20) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/local/include/features.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed/features.h", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] stat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed/features.h.gch", 0xbecbaf20) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed/features.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/include/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include/arm-linux-gnueabihf/features.h", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] stat64("/usr/include/arm-linux-gnueabihf/features.h.gch", 0xbecbaf20) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/include/arm-linux-gnueabihf/features.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/include/features.h", {st_mode=S_IFREG|0644, st_size=13018, ...}) = 0
+[pid 10704] stat64("/usr/include/features.h.gch", 0xbecbaf20) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/include/features.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = 4
+[pid 10704] fstat64(4, {st_mode=S_IFREG|0644, st_size=13018, ...}) = 0
+[pid 10704] read(4, "/* Copyright (C) 1991-2015 Free "..., 13018) = 13018
+[pid 10704] close(4)                    = 0
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include/sys", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include/sys/cdefs.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local/include/sys", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/local/include/sys/cdefs.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed/sys", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed/sys/cdefs.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/include/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include/arm-linux-gnueabihf/sys", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include/arm-linux-gnueabihf/sys/cdefs.h", {st_mode=S_IFREG|0644, st_size=15052, ...}) = 0
+[pid 10704] open("/usr/include/arm-linux-gnueabihf/sys/cdefs.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = 4
+[pid 10704] fstat64(4, {st_mode=S_IFREG|0644, st_size=15052, ...}) = 0
+[pid 10704] read(4, "/* Copyright (C) 1992-2015 Free "..., 15052) = 15052
+[pid 10704] close(4)                    = 0
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include/bits", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include/bits/wordsize.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local/include/bits", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/local/include/bits/wordsize.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed/bits", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed/bits/wordsize.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/include/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include/arm-linux-gnueabihf/bits", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include/arm-linux-gnueabihf/bits/wordsize.h", {st_mode=S_IFREG|0644, st_size=811, ...}) = 0
+[pid 10704] open("/usr/include/arm-linux-gnueabihf/bits/wordsize.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = 4
+[pid 10704] fstat64(4, {st_mode=S_IFREG|0644, st_size=811, ...}) = 0
+[pid 10704] read(4, "/* Copyright (C) 1999-2015 Free "..., 811) = 811
+[pid 10704] close(4)                    = 0
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include/gnu", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include/gnu/stubs.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local/include/gnu", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/local/include/gnu/stubs.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed/gnu", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed/gnu/stubs.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/include/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include/arm-linux-gnueabihf/gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include/arm-linux-gnueabihf/gnu/stubs.h", {st_mode=S_IFREG|0644, st_size=295, ...}) = 0
+[pid 10704] open("/usr/include/arm-linux-gnueabihf/gnu/stubs.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = 4
+[pid 10704] fstat64(4, {st_mode=S_IFREG|0644, st_size=295, ...}) = 0
+[pid 10704] read(4, "/* This file is automatically ge"..., 295) = 295
+[pid 10704] close(4)                    = 0
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include/gnu", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include/gnu/stubs-hard.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local/include/gnu", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/local/include/gnu/stubs-hard.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed/gnu", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed/gnu/stubs-hard.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/include/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include/arm-linux-gnueabihf/gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include/arm-linux-gnueabihf/gnu/stubs-hard.h", {st_mode=S_IFREG|0644, st_size=715, ...}) = 0
+[pid 10704] open("/usr/include/arm-linux-gnueabihf/gnu/stubs-hard.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = 4
+[pid 10704] fstat64(4, {st_mode=S_IFREG|0644, st_size=715, ...}) = 0
+[pid 10704] read(4, "/* This file is automatically ge"..., 715) = 715
+[pid 10704] close(4)                    = 0
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include/bits", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include/bits/sigset.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local/include/bits", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/local/include/bits/sigset.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed/bits", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed/bits/sigset.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/include/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include/arm-linux-gnueabihf/bits", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include/arm-linux-gnueabihf/bits/sigset.h", {st_mode=S_IFREG|0644, st_size=4553, ...}) = 0
+[pid 10704] open("/usr/include/arm-linux-gnueabihf/bits/sigset.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = 4
+[pid 10704] fstat64(4, {st_mode=S_IFREG|0644, st_size=4553, ...}) = 0
+[pid 10704] read(4, "/* __sig_atomic_t, __sigset_t, a"..., 4553) = 4553
+[pid 10704] close(4)                    = 0
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include/bits", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include/bits/types.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local/include/bits", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/local/include/bits/types.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed/bits", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed/bits/types.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/include/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include/arm-linux-gnueabihf/bits", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include/arm-linux-gnueabihf/bits/types.h", {st_mode=S_IFREG|0644, st_size=7563, ...}) = 0
+[pid 10704] open("/usr/include/arm-linux-gnueabihf/bits/types.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = 4
+[pid 10704] fstat64(4, {st_mode=S_IFREG|0644, st_size=7563, ...}) = 0
+[pid 10704] read(4, "/* bits/types.h -- definitions o"..., 7563) = 7563
+[pid 10704] close(4)                    = 0
+[pid 10704] open("/usr/include/arm-linux-gnueabihf/bits/wordsize.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = 4
+[pid 10704] fstat64(4, {st_mode=S_IFREG|0644, st_size=811, ...}) = 0
+[pid 10704] read(4, "/* Copyright (C) 1999-2015 Free "..., 811) = 811
+[pid 10704] close(4)                    = 0
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include/bits", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include/bits/typesizes.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local/include/bits", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/local/include/bits/typesizes.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed/bits", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed/bits/typesizes.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/include/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include/arm-linux-gnueabihf/bits", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include/arm-linux-gnueabihf/bits/typesizes.h", {st_mode=S_IFREG|0644, st_size=2874, ...}) = 0
+[pid 10704] open("/usr/include/arm-linux-gnueabihf/bits/typesizes.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = 4
+[pid 10704] fstat64(4, {st_mode=S_IFREG|0644, st_size=2874, ...}) = 0
+[pid 10704] read(4, "/* bits/typesizes.h -- underlyin"..., 2874) = 2874
+[pid 10704] close(4)                    = 0
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include/bits", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include/bits/signum.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/local/include/bits", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/local/include/bits/signum.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed/bits", 0xbecb9e60) = -1 ENOENT (No such file or directory)
+[pid 10704] open("/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed/bits/signum.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+[pid 10704] lstat64("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+[pid 10704] lstat64("/usr/include/arm-linux-gnueabihf", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include/arm-linux-gnueabihf/bits", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 10704] lstat64("/usr/include/arm-linux-gnueabihf/bits/signum.h", {st_mode=S_IFREG|0644, st_size=3397, ...}) = 0
+[pid 10704] open("/usr/include/arm-linux-gnueabihf/bits/signum.h", O_RDONLY|O_NOCTTY|O_LARGEFILE) = 4
+[pid 10704] fstat64(4, {st_mode=S_IFREG|0644, st_size=3397, ...}) = 0
+[pid 10704] read(4, "/* Signal number definitions.  L"..., 3397) = 3397
+[pid 10704] close(4)                    = 0
+[pid 10704] write(2, "sigaction.c: In function \342\200\230main"..., 37sigaction.c: In function ‘main’:
+) = 37
+[pid 10704] open("sigaction.c", O_RDONLY|O_LARGEFILE) = 4
+[pid 10704] fstat64(4, {st_mode=S_IFREG|0644, st_size=425, ...}) = 0
+[pid 10704] mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb683b000
+[pid 10704] read(4, "#include <signal.h>\n\n\nstatic voi"..., 4096) = 425
+[pid 10704] read(4, "", 4096)           = 0
+[pid 10704] write(2, "sigaction.c:12:22: error: storag"..., 115sigaction.c:12:22: error: storage size of ‘sa’ isn’t known
+     struct sigaction sa;
+                      ^
+) = 115
+[pid 10704] write(2, "sigaction.c:16:5: error: implici"..., 148sigaction.c:16:5: error: implicit declaration of function ‘sigemptyset’ [-Wimplicit-function-declaration]
+     sigemptyset(&sa.sa_mask);
+     ^
+) = 148
+[pid 10704] write(2, "sigaction.c:17:19: error: \342\200\230SA_"..., 159sigaction.c:17:19: error: ‘SA_RESTART’ undeclared (first use in this function)
+     sa.sa_flags = SA_RESTART; /* Restart functions if
+                   ^
+) = 159
+[pid 10704] write(2, "sigaction.c:17:19: note: each un"..., 106sigaction.c:17:19: note: each undeclared identifier is reported only once for each function it appears in
+) = 106
+[pid 10704] write(2, "sigaction.c:19:5: error: implici"..., 160sigaction.c:19:5: error: implicit declaration of function ‘sigaction’ [-Wimplicit-function-declaration]
+     if (sigaction(SIGINT, &sa, NULL) == -1)
+     ^
+) = 160
+[pid 10704] write(2, "sigaction.c:19:32: error: \342\200\230NUL"..., 156sigaction.c:19:32: error: ‘NULL’ undeclared (first use in this function)
+     if (sigaction(SIGINT, &sa, NULL) == -1)
+                                ^
+) = 156
+[pid 10704] write(3, "\t.syntax unified\n\t.arch armv7-a\n"..., 330) = 330
+[pid 10704] close(3)                    = 0
+[pid 10704] munmap(0xb6848000, 4096)    = 0
+[pid 10704] close(4)                    = 0
+[pid 10704] munmap(0xb683b000, 4096)    = 0
+[pid 10704] exit_group(1)               = ?
+[pid 10704] +++ exited with 1 +++
+<... wait4 resumed> [{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 10704
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=10704, si_status=1, si_utime=9, si_stime=5} ---
+stat64("/tmp/ccgaoTDh.s", {st_mode=S_IFREG|0600, st_size=330, ...}) = 0
+unlink("/tmp/ccgaoTDh.s")               = 0
+exit_group(1)                           = ?
++++ exited with 1 +++
