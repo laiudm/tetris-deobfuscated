@@ -158,6 +158,29 @@ void updatePosition(int b){
 		grid[i?x+piece[i]:x]=b;
 }
 
+void sigint(int signum) {	// deal with ^c being entered
+	printf("\033[0m");	// set Character Attributes
+	printf("\n^C caught\n");
+	
+	exit(1);
+}
+
+// ensure terminal is put back in a clean state no matter how it exits (eg. ^c)
+void cleanup(void) {
+
+	system("stty -cbreak echo stop \023");
+	//FILE *ff=popen("sort -mnr -o HI - HI; cat HI","w");
+	FILE *ff=popen("sort -mnr -o HI - HI; head HI","w");
+	fprintf(ff,"%4d from level %1d by %s\n",score,level,getlogin());
+	// -m = merge
+	// -n = numeric sort
+	// -r = reverse the result of comparisons
+	// -o HI = output file
+	// - H = read standard input, then file HI
+	// So it reads from stdin (the pipe) until stdin closes, then it reads HI by merging and the re-writes the file. Finally it uses cat to display the file.
+	pclose(ff);
+}
+
 int main(int argc, char **argv) {
 	
 	//printf("offsetof it_value.tv_sec is %i\n", offsetof(struct itimerval, it_value.tv_sec)/4); 
@@ -183,6 +206,10 @@ int main(int argc, char **argv) {
 	//debug("EINTR has value %i\n", EINTR); // outputs 4
 	
 	puts("\033[H\033[J");		// [H = direct cursor addr (0,0); [J = erase from cursor to end of screen
+	
+	atexit(cleanup);
+	signal(SIGINT, sigint);
+	
 	piece=pieces+rand()%7*4;
 	for(;;) {
 		if(inChar<0){
@@ -241,26 +268,16 @@ int main(int argc, char **argv) {
 			if(inChar==keySel[5])			// quit
 				break;
 			int j;
-			for(j=264;j--;)	// reset the displayBuff so that it's completely redrawn
+			for(j=264;j--;)	// reset the displayBuff so that it will be completely redrawn
 				displayShadow[j]=0;
 			while(getchar() != keySel[4]);
 			puts("\033[H\033[J\033[7m");		// [H = cursor to (0,0); clear screen; set Character Attributes - 7=Reverse Video On
 			sigsetmask(s);
 		}
-		updatePosition(7);
-		updateDisplay();
-		updatePosition(0);
+		updatePosition(7);	// place the piece
+		updateDisplay();	// ... and update the screen
+		updatePosition(0);	// remove the piece, ready for it to be placed in its next position
 	};
 	
-	system("stty -cbreak echo stop \023");
-	FILE *ff=popen("sort -mnr -o HI - HI; cat HI","w");
-	fprintf(ff,"%4d from level %1d by %s\n",score,level,getlogin());
-	// -m = merge
-	// -n = numeric sort
-	// -r = reverse the result of comparisons
-	// -o HI = output file
-	// - H = read standard input, then file HI
-	// So it reads from stdin (the pipe) until stdin closes, then it reads HI by merging and the re-writes the file. Finally it uses cat to display the file.
-	pclose(ff);
 	return 0;
 }
